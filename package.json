@@ -1,0 +1,37 @@
+{
+  "name": "hardhat-project",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "merkletreejs": "^0.2.31",
+    "web3-utils": "^1.7.1"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^3.4.2",
+    "@typechain/ethers-v5": "^8.0.5",
+    "@typechain/hardhat": "^3.0.0",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.5.2",
+    "hardhat": "^2.9.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.6.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solidity-coverage": "^0.7.20",
+    "ts-node": "^10.4.0",
+    "typechain": "^6.0.5",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "build": "hardhat compile",
+    "format:test": "prettier --write \"test/**/*.ts\"",
+    "format": "prettier --write \"contracts/**/*.sol\"",
+    "lint": "yarn format && solhint -c .solhint.json contracts/**/*.sol",
+    "test": "hardhat test --verbose",
+    "coverage": "node --max-old-space-size=4096 ./node_modules/.bin/hardhat coverage"
+  }
+}

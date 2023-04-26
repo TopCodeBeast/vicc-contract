@@ -12,7 +12,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract ViccTokens is
     MinterAccess,
     RelayRecipient,
-    ERC721("VICC", "VIC"),
+    ERC721("VICC", "VICC"),
     IViccTokens
 {
     // Vicc cards
